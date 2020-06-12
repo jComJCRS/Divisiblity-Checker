@@ -20,14 +20,14 @@ while True:
         print("Not a numeral, Enter a numeral to find divisiblity\n")
     #Finding the divisiblity one by one
     for i in range(1, value + 1):
+        #If the value entered is zero, then the program stops
+        if value == 0:
+            exit()
         if value % i == 0:
             #Prints the given value's possible divisible numbers
             print("Divisible by " + str(i))
             #Adding the values into the list to find the given value in variable value is a prime or a composite number
             numlist.append(i)
-        #If the value entered is zero, then the program stops
-        if value == 0:
-            exit()
     #Prints a blank line
     print("")
 
